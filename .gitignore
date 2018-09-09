@@ -3,6 +3,15 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+pip-selfcheck.json
+# virtualenv
+bin/
+include/
+
+# Ignore Configs
+*.yaml
+*kdev4*
+
 # C extensions
 *.so
 
