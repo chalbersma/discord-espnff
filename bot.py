@@ -10,7 +10,7 @@ import logging
 import discord
 import yaml
 import sys
-import espnff
+import ffespn
 import texttable
 
 import discord_helpers
@@ -19,6 +19,7 @@ from chatcmds import echo
 from chatcmds import scoreboard
 from chatcmds import rankings
 from chatcmds import matchup
+from chatcmds import teams
 
 
 if __name__ == "__main__":
@@ -103,7 +104,7 @@ if __name__ == "__main__":
 
         if iscommand is True:
             # Build Latest and Greates
-            ourleague = espnff.League(configs["league_id"], configs["season"])
+            ourleague = ffespn.League(configs["league_id"], configs["season"])
             context_dict = {"espnff" : ourleague, \
                             "configs" : configs, \
                             "dclient" : client, \
